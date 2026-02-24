@@ -9,17 +9,18 @@
   padding: 20px;
 }
 
-header h1 {
-  margin: 0;
-}
+header h1 { margin: 0; }
+header p { margin: 8px 0 12px; color: #6b7280; }
 
-header p {
-  margin: 8px 0 18px;
-  color: #6b7280;
+nav { display:flex; gap:10px; margin-bottom:16px; }
+nav a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  color: #111827;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 14px;
+nav a.active {
+  background: #111827;
+  color: #fff;
 }

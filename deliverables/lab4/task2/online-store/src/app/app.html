@@ -2,11 +2,12 @@
   <header>
     <h1>{{ title }}</h1>
     <p>Products from Kaspi.kz (Angular Lab 4)</p>
+
+    <nav>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Catalog</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+    </nav>
   </header>
 
-  <section class="grid">
-    @for (item of products; track item.id) {
-      <app-product-card [product]="item"></app-product-card>
-    }
-  </section>
+  <router-outlet />
 </main>
