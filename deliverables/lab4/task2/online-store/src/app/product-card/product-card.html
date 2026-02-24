@@ -1,0 +1,16 @@
+<article class="card">
+  <img [src]="product().image" [alt]="product().name" class="main-image" />
+
+  <div class="body">
+    <h3>{{ product().name }}</h3>
+    <p>{{ product().description }}</p>
+    <p class="price">{{ product().price }} ₸</p>
+    <p class="rating">{{ stars() }} ({{ product().rating }})</p>
+
+    <div class="actions">
+      <a [href]="product().link" target="_blank" rel="noopener">Open on Kaspi</a>
+      <a [href]="whatsappShareUrl()" target="_blank" rel="noopener">Share WhatsApp</a>
+      <a [href]="telegramShareUrl()" target="_blank" rel="noopener">Share Telegram</a>
+    </div>
+  </div>
+</article>

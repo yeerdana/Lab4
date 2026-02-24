@@ -1,0 +1,12 @@
+<main class="container">
+  <header>
+    <h1>{{ title }}</h1>
+    <p>Products from Kaspi.kz (Angular Lab 4)</p>
+  </header>
+
+  <section class="grid">
+    @for (item of products; track item.id) {
+      <app-product-card [product]="item"></app-product-card>
+    }
+  </section>
+</main>
